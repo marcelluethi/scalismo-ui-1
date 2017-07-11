@@ -39,7 +39,8 @@ object Creds {
 }
 
 object Dependencies {
-  val scalismo = "ch.unibas.cs.gravis" %% "scalismo" % "0.15.0"
+  val scalismo = "ch.unibas.cs.gravis" %% "scalismo" % "0.15.2"
+  val scalismoFaces = "ch.unibas.cs.gravis" %% "scalismo-faces" % "0.4.1"
   val scalismoNative = "ch.unibas.cs.gravis" % "scalismo-native-all" % "4.0.0"
   val scalatest = "org.scalatest" %% "scalatest" % "3.0.1" % "test"
   val swingPlus = "de.sciss" %% "swingplus" % "0.2.2"
@@ -58,6 +59,7 @@ object ScalismoUiBuild extends Build {
   // Sub-project specific dependencies
   val commonDeps = Seq(
     scalismo,
+    scalismoFaces,
     scalismoNative,
     scalatest,
     swingPlus,
